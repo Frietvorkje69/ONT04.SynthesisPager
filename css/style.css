@@ -1,49 +1,58 @@
 /* Custom Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap'); /* TEXT */
+@import url('https://fonts.googleapis.com/css2?family=Days+One&display=swap'); /* HEADER */
 
-@font-face {
-    font-family: HyliaSerif;
-    src: url(../font/HyliaSerif.otf);
+/*Navbar*/
+nav {
+    display:flex;
+    justify-content:space-evenly;
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-@font-face {
-    font-family: PixelEmulator;
-    src: url(../font/PixelEmulator.ttf);
+nav a {
+    font-size: 22px;
+    font-weight: bold;
+    display: block;
+    text-decoration: none;
 }
 
-@font-face {
-    font-family: DisposableDroidBB;
-    src: url(../font/DisposableDroidBB.ttf);
+nav div {
+    padding: 10px;
+    flex-grow: 1;
+    text-align: center;
+    background-color: #f72c25ff;
+    cursor: pointer;
+    transition: background-color 0.4s ease-out;
+}
+
+nav div:hover {
+    background-color: #CC241F;
+}
+
+nav.sticky {
+    position: fixed;
+    top: 0;
 }
 
 /* Standard HTML */
 header {
-    font-family: 'HyliaSerif', sans-serif;
+    font-family: 'Days One', sans-serif;
     font-size: 4.5em;
     color: white;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;
-    padding-top: 3vh;
+    text-shadow: 3px 3px black;
+    padding-top: 10vh;
     text-align: center;
-    height: 18vh;
+    height: 30vh;
     background-color: #496a81ff;
-    /*background-image: url("../img/header.png");*/
+    background-image: url("../img/header.png");
     background-size: cover;
     background-position: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-nav {
-    background-color: #f72c25ff;
-    color: white;
-    display: flex;
-    font-weight: bold;
-    justify-content: space-evenly;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-nav div {
-    padding: 8px;
 }
 
 body {
@@ -69,9 +78,16 @@ a {
 
 a:hover {
     color: #afb8c0ff;
+    transition: background-color 0.4s ease-out;
 }
 
-h1,
+h1 {
+    color: #496a81ff;
+    margin-top: 4px;
+    font-family: 'Cabin', sans-serif;
+    font-weight: normal;
+}
+
 h2 {
     margin-top: 4px;
     font-family: 'Cabin', sans-serif;
@@ -98,26 +114,33 @@ h2 {
     object-fit: cover;
 }
 
+img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+}
+
 section {
+    border-radius: 15px 30px 15px 5px;
     background-color: #f4f5f6ff;
+    box-shadow: 4px 4px #f72c25ff;
     padding: 20px;
     margin: 20px auto;
     color: rgb(22, 22, 66);
     font-size: 1.1em;
     max-width: 800px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-footer {
-    color: white;
-    background-color: #f72c25ff;
-    height: 30vh;
-    flex-direction: column;
-    text-align: center;
-    display: flex;
-    justify-content: space-evenly;
-}
+/*section {*/
+/*    background-color: #f4f5f6ff;*/
+/*    padding: 20px;*/
+/*    margin: 20px auto;*/
+/*    color: rgb(22, 22, 66);*/
+/*    font-size: 1.1em;*/
+/*    max-width: 800px;*/
+/*    border-radius: 10px;*/
+/*    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);*/
+/*}*/
+
 
 figcaption {
     font-size: 0.7em;
@@ -125,9 +148,17 @@ figcaption {
     opacity: 0.6;
 }
 
-.footerItems{
-    transition: .1s ease-in-out;
+footer {
+    color: white;
+    background-color: #f72c25ff;
+    height: 8vh;
+    display: flex;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    align-items: center;
 }
 
-.footerItems:hover{
-    transform: scale(1.5);
+footer div, i {
+    flex: 1;
+}
