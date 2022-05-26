@@ -1,2 +1,2 @@
-# CLE03.OnePager
-Front-End BB CMGT leerjaar 1
+# CLE04.SynthesisPager
+Content BB CMGT leerjaar 1
