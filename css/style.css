@@ -1,4 +1,14 @@
 /* Custom Fonts */
+@font-face {
+    font-family: D3Little;
+    src: url(../fonts/D3Little.ttf);
+}
+
+@font-face {
+    font-family: NineteenNinety;
+    src: url(../fonts/NineteenNinety.ttf);
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap'); /* TEXT */
 @import url('https://fonts.googleapis.com/css2?family=Days+One&display=swap'); /* HEADER */
 
@@ -23,13 +33,13 @@ nav div {
     padding: 10px;
     flex-grow: 1;
     text-align: center;
-    background-color: #f72c25ff;
+    background-color: #151640;
     cursor: pointer;
     transition: background-color 0.4s ease-out;
 }
 
 nav div:hover {
-    background-color: #CC241F;
+    background-color: #1E1F5C;
 }
 
 nav.sticky {
@@ -39,16 +49,16 @@ nav.sticky {
 
 /* Standard HTML */
 header {
-    font-family: 'Days One', sans-serif;
+    font-family: 'D3Little', sans-serif;
     font-size: 4.5em;
-    color: white;
+    color: #561F5C;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;
     text-shadow: 3px 3px black;
     padding-top: 10vh;
     text-align: center;
     height: 30vh;
-    background-color: #496a81ff;
+    background-color: #8F46C1;
     background-image: url("../img/header.png");
     background-size: cover;
     background-position: center;
@@ -56,11 +66,11 @@ header {
 }
 
 body {
-    background-color: white;
+    background-color: #3F6D9E;
     font-size: 18px;
     margin: 0;
     padding: 0;
-    font-family: 'Cabin', sans-serif;
+    font-family: 'NineteenNinety', sans-serif;
 }
 
 * {
@@ -82,7 +92,7 @@ a:hover {
 }
 
 h1 {
-    color: #496a81ff;
+    color: #561F5C;
     margin-top: 4px;
     font-family: 'Cabin', sans-serif;
     font-weight: bold;
@@ -120,14 +130,14 @@ h2 {
 }
 
 img {
-    box-shadow: 4px 4px #496a81ff;
+    box-shadow: 4px 4px #F783B0;
     border-radius: 15px 30px 15px 5px;
 }
 
 section {
     border-radius: 15px 30px 15px 5px;
     background-color: #f4f5f6ff;
-    box-shadow: 4px 4px #f72c25ff;
+    box-shadow: 4px 4px #F783B0;
     padding: 20px;
     margin: 20px auto;
     font-size: 1.1em;
@@ -142,7 +152,7 @@ figcaption {
 
 footer {
     color: white;
-    background-color: #496a81ff;
+    background-color: #561F5C;
     height: 8vh;
     display: flex;
     text-align: center;
