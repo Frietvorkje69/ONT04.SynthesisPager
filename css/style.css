@@ -94,15 +94,17 @@ a:hover {
 h1 {
     color: #561F5C;
     margin-top: 4px;
-    font-family: 'Cabin', sans-serif;
+    font-family: 'D3Little', sans-serif;
     font-weight: bold;
+    text-align: center;
 }
 
 h2 {
     font-size: 1.2em;
     margin-top: 4px;
-    font-family: 'Cabin', sans-serif;
+    font-family: 'D3Little', sans-serif;
     font-weight: bold;
+    text-align: center;
 }
 
 .imageGallery {
