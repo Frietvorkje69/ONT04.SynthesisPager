@@ -1,2 +1,2 @@
-# CLE04.SynthesisPager
-Content BB CMGT leerjaar 1
+# ONT04.SynthesisPager
+Ontwerpen 4 CMGT leerjaar 1
