@@ -59,7 +59,7 @@ header {
     text-align: center;
     height: 30vh;
     background-color: #8F46C1;
-    background-image: url("../img/header.png");
+    background-image: url("../img/backg.png");
     background-size: cover;
     background-position: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -130,6 +130,23 @@ h2 {
 #wideShot figure {
     width: 100%;
 }
+#big img {
+    width: 400px;
+    height: 400px;
+    margin-right: 40px;
+    margin-left: 175px;
+}
+#big figcaption {
+    width: 400px;
+    height: 100%;
+    margin-right: 40px;
+    margin-left: 175px;
+}
+
+ .center {
+     text-align: center;
+ }
+
 
 img {
     box-shadow: 4px 4px #F783B0;
